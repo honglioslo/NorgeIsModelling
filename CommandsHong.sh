@@ -1,5 +1,7 @@
 #!/bin/sh
 ### step 1: prepare MET data
+### extract pre and tem from SeNorge datasets
+### input: 
 /hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/stationMask control_mask.txt
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Pre
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Tem
