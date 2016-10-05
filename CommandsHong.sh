@@ -14,7 +14,6 @@ export  METMASK=/hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/M
 /hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/gridMaskVariable control_grid100.txt
 
 ### step 2: make discharge data
-
 mkdir /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Disc
 ####################################################################
 ts=timeseries
@@ -29,7 +28,7 @@ lescon_var -s 196101010000 -e 201501010000 -f timevalue 5 $reg $mno 0 1001 0 > $
 timeseriegraph $reg.$mno.0.1001.0.var
 done
 
-
+### step 3: make pest files for calibration 
 ####################################################################
 # Preparing Qobs for pest-file and for instruction-files
 ####################################################################
@@ -67,7 +66,8 @@ cp dew.pst ..
 # Output file name                                       : stations.txt
 # 
 # 2. Run stationMask
-
+### step 4: run the HBV model. There are four sub-routines
+### step 4.1: mask
 /hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/stationMask control_mask.txt
 # output : 
 #         stations.txt
@@ -89,6 +89,12 @@ cp dew.pst ..
 ####
 
 ####################################################################
+### step 4: run the HBV model. There are four sub-routines
+### step 4.2: flow
+
+### step 4: run the HBV model. There are four sub-routines
+### step 4.3: predew
+
 # Run predew
 ####################################################################
 # 1. Preparing control_pre.txt
@@ -145,7 +151,11 @@ head -25 watershed_00.txt > subcatchment_output_elements.txt
 # create subcatchment_output_elements.txt from watershed.txt
 ###
 ####################################################################
+### step 4: run the HBV model. There are four sub-routines
+### step 4.4: run dew
+
 # Set environment variable
 ####################################################################
 export  METDATA=/hdata/grid/metdata
 export  METMASK=/hdata/fou/personlig/guru/DEW/Dew/"Aalfotbreen"/Met
+
