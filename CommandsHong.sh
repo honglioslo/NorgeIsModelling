@@ -1,4 +1,5 @@
 #!/bin/sh
+### step 1: prepare MET data
 /hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/stationMask control_mask.txt
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Pre
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Tem
@@ -11,6 +12,9 @@ mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met100m/
 export  METDATA=/hdata/grid/metdata
 export  METMASK=/hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met100m
 /hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/gridMaskVariable control_grid100.txt
+
+### step 2: make discharge data
+
 mkdir /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Disc
 ####################################################################
 ts=timeseries
