@@ -1,0 +1,20 @@
+Model structure, HBV (0) or KinematicWave (1)                                  : 0
+Landscape elements hierarchy, flow direction network(N) or nested catchments(C): C
+Output file name                                                               : pre_out.txt
+File with meteorological stations                                              : met_stations.txt
+File with common parameters                                                    : dew_common_parameters.txt
+File with geographical analysis area                                           : stations.txt
+File with grid cell elevations                                                 : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/lokaldtm1km.asc
+File with slope lengths                                                        : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/lokaldtm1km.asc
+File with slope angles                                                         : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/lokaldtm1km.asc
+File with slope aspects                                                        : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/lokaldtm1km.asc
+File with lake percentage                                                      : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/innsjopro1km.asc
+File with forest percentage                                                    : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/skogarpro1km.asc
+File with bog percentage                                                       : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/myrarepro1km.asc
+File with glacier percentage                                                   : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/brearepro1km.asc
+File with glacier surface elevations                                           : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/lokaldtm1km.asc
+File with glacier ice thickness                                                : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/istykkelse1km.asc
+File with tree levels                                                          : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/tregrense1km.asc
+File with sub-catchment hierarchy                                              : watershed.txt
+File with flow direction grid for landscape elements                           : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/flowdir1km.asc
+File with watercourse/sub-catchment identifiers                                : /hdata/fou/IsbreModellering/Test/Hardangenjokulen/Geodata/watershed_area1km1980-2015.asc

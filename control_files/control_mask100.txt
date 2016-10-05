@@ -1,0 +1,3 @@
+File with sub-catchment identifiers                    : watershed.txt
+File with grid cell sub-catchment identifiers          : /hdata/fou/NorgeIsModelling/HardangenjokulenTest/HardangerJokulen_fraKjetil/watershed_areasmall.asc 
+Output file name                                       : stations100.txt
