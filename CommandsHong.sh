@@ -1,19 +1,21 @@
 #!/bin/sh
 ### step 1: prepare MET data
-### extract pre and tem from SeNorge datasets
-### input: 
+### extract pre and tem from SeNorge datasets, two examples are given (1km and 100m)
+### input: control_grid
+### output: /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Pre
+###         /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Tem
 /hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/stationMask control_mask.txt
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Pre
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km/Tem
 export  METDATA=/hdata/grid/metdata
 export  METMASK=/hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met1km
-/hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/ExtractSeNorge control_grid.txt
+/hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/ExtractSeNorge control_grid_1km.txt
 
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met100m/Pre
 mkdir -p /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met100m/Tem
 export  METDATA=/hdata/grid/metdata
 export  METMASK=/hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Met100m
-/hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/gridMaskVariable control_grid100.txt
+/hdata/fou/personlig/guru/DEW/Dew/Source/pre_3.01b/gridMaskVariable control_grid_100m.txt
 
 ### step 2: make discharge data
 mkdir /hdata/fou/NorgeIsModelling/HardangenjokulenTest/500013Bjoreio/Disc
